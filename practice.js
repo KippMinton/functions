@@ -57,3 +57,16 @@ console.log(words)
 let badSentence = buildString(words)
 console.log(badSentence)
 
+
+// fish catching function
+
+const catchFish = (num) => {
+   let castNum = Math.floor(Math.random() * num)
+   console.log(castNum)
+   if (castNum === 2) {
+      console.log("Sven hooked a tuna!  :)")
+   } else console.log("Sven came up empty-handed.  :(")
+}
+
+catchFish(3)
+
