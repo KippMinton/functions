@@ -86,3 +86,29 @@ const takeOutBag = orderMeal("Ultimate Slammer", "Fudge sundae", "Mr. Pepper", "
 
 console.log(takeOutBag)
 
+// chores functions
+
+let kippObj = {
+   firstName: "Kipp",
+   lastName: "Minton"
+}
+
+const sweepFloors = person => `${person.firstName} ${person.lastName} swept the floors`
+
+const groceryShopping = person => `${person.firstName} ${person.lastName} bought groceries`
+
+const washDishes = person => `${person.firstName} ${person.lastName} washed the dishes`
+
+const doLaundry = person => `${person.firstName} ${person.lastName} did laundry`
+
+const cook = person => `${person.firstName} ${person.lastName} cooked dinner`
+
+const changeCatLitter = person => `${person.firstName} ${person.lastName} cleaned the litter box`
+
+const dayPlanner = (chore, person, day) => chore(person) + ` ${day}.`
+
+const busyDayPlanner = (chore1, chore2, chore3, person, day) => `On ${day}, ` + chore1(person) + `, and ` + chore2(person) + `, and ` + chore3(person) + `.`
+
+console.log(dayPlanner(cook, kippObj, "Thursday"))
+
+console.log(busyDayPlanner(cook, doLaundry, washDishes, kippObj, "Wednesday"))
