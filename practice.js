@@ -70,3 +70,19 @@ const catchFish = (num) => {
 
 catchFish(3)
 
+// fast food order function
+
+ const orderMeal = (sandwich, side, drink, dessert) => {
+   let order = {
+      sandwhich: sandwich,
+      side: side,
+      drink: drink,
+      dessert: dessert
+   }
+   return order
+}
+
+const takeOutBag = orderMeal("Ultimate Slammer", "Fudge sundae", "Mr. Pepper", "Potato wedges")
+
+console.log(takeOutBag)
+
